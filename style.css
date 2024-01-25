@@ -3,7 +3,9 @@
 }
 
 img {
-    width: 100%
+    width: 100%;
+    border-radius: 5px;
+    /* soften the corners of image */
 }
 
 .hero-image {
@@ -25,7 +27,7 @@ img {
 
 .two-column {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     /*1fr 2fr is used for relation between columns, eg 1:2*/
     gap: 50px;
     width: 80%;
@@ -35,6 +37,25 @@ img {
 }
 
 .info {
-    font: size 1.25em;
-    ;
+    font: size 1em
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* or grid-template-columns: repeat(3, 1fr) */
+    gap: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: rgb(5, 5, 113);
+}
+
+.card-text {
+    text-align: center;
+    color: whitesmoke;
 }
